@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage("Clone"){
             steps{
+                echo "I am going to clone new source code"
                 git "https://github.com/hoangbinhc11996/test-jenkins-nodejs.git"
             }
             post{
